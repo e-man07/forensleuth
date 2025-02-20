@@ -278,7 +278,7 @@ export default function Home() {
                       poster="/hero-forensleuth.jpg"
                       controls
                     >
-                      <source src="/about-forensleuth.mp4" type="video/mp4" />
+                      <source src="/video.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                     <div className="absolute inset-0 flex items-center justify-center z-20 opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
