@@ -134,53 +134,31 @@ export default function Home() {
 
               {/* Right Content - Forensic Illustration */}
               <div className="relative group">
-                <div className="relative w-full h-[400px] bg-gray-800 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105">
-                  {/* Decorative Elements */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div>
+                <div className="relative w-full h-[350px] rounded-2xl overflow-hidden">
+                  {/* Background glow effect */}
+                  <div className="absolute inset-0 bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors duration-300 rounded-2xl"></div>
                   
-                  {/* DNA Helix Animation */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative w-48 h-48">
-                      {[...Array(20)].map((_, i) => (
-                        <div
-                          key={i}
-                          className="absolute w-full h-1 bg-blue-600 opacity-20 transform"
-                          style={{
-                            top: `${(i * 5)}%`,
-                            animation: `wave 3s infinite ease-in-out ${i * 0.1}s`,
-                            transform: `rotate(${i * 18}deg)`
-                          }}
-                        >
-                          <div className="w-3 h-3 rounded-full bg-blue-600 absolute -left-1 -top-1"></div>
-                          <div className="w-3 h-3 rounded-full bg-blue-600 absolute -right-1 -top-1"></div>
-                        </div>
-                      ))}
-                    </div>
+                  {/* Image container with hover effects */}
+                  <div className="relative w-full h-full transform transition-all duration-500 
+                    group-hover:scale-105 group-hover:rotate-1">
+                    <Image
+                      src="/hero-image.jpg" 
+                      alt="Forensic Illustration"
+                      fill
+                      className="object-cover rounded-2xl transition-all duration-500
+                        group-hover:brightness-110 group-hover:contrast-110"
+                      priority
+                    />
+                    
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent 
+                      opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                    
+                    {/* Shine effect */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700
+                      bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-200%]
+                      group-hover:translate-x-[200%]"></div>
                   </div>
-
-                  {/* Magnifying Glass with Pulse Effect */}
-                  <div className="absolute top-1/4 right-1/4 transform rotate-45 group-hover:scale-110 transition-transform duration-500">
-                    <div className="w-12 h-12 border-4 border-blue-600 rounded-full relative animate-pulse">
-                      <div className="w-4 h-20 bg-blue-600 absolute top-12 left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                  </div>
-
-                  {/* Fingerprint Pattern with Ripple Effect */}
-                  <div className="absolute bottom-1/4 left-1/4 w-24 h-24 opacity-20">
-                    {[...Array(8)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="absolute inset-0 border-2 border-blue-600 rounded-full animate-ripple"
-                        style={{
-                          animationDelay: `${i * 0.2}s`
-                        }}
-                      ></div>
-                    ))}
-                  </div>
-
-                  {/* Additional Decorative Elements */}
-                  <div className="absolute -right-4 -bottom-4 w-24 h-24 border-r-4 border-b-4 border-blue-600 opacity-50 animate-pulse"></div>
-                  <div className="absolute -left-4 -top-4 w-24 h-24 border-l-4 border-t-4 border-blue-600 opacity-50 animate-pulse"></div>
                 </div>
               </div>
             </div>
@@ -210,7 +188,7 @@ export default function Home() {
                     We combine cutting-edge technology with decades of expertise to deliver comprehensive solutions in forensic science education, investigation, and research. Our team of seasoned professionals brings unparalleled experience and dedication to every project.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-4">
-                    <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-lg">
+                    {/* <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-lg"> */}
                       {/* <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                         <span className="text-2xl text-blue-600 font-bold">10</span>
                       </div> */}
@@ -218,23 +196,23 @@ export default function Home() {
                         <div className="font-semibold text-gray-900">Years of</div>
                         <div className="text-gray-600">Excellence</div>
                       </div> */}
-                    </div>
+                    {/* </div> */}
                     <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-lg">
-                      {/* <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                         <span className="text-2xl text-blue-600 font-bold">50+</span>
-                      </div> */}
-                      {/* <div className="text-sm">
+                      </div> 
+                       <div className="text-sm">
                         <div className="font-semibold text-gray-900">Expert</div>
                         <div className="text-gray-600">Professionals</div>
-                      </div> */}
+                      </div> 
                     </div>
                     <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-lg">
-                      {/* <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                       <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                         <span className="text-2xl text-blue-600 font-bold">1K+</span>
-                      </div> */}
+                      </div> 
                       <div className="text-sm">
-                        {/* <div className="font-semibold text-gray-900">Successful</div>
-                        <div className="text-gray-600">Cases</div> */}
+                         <div className="font-semibold text-gray-900">Successful</div>
+                        <div className="text-gray-600">Cases</div> 
                       </div>
                     </div>
                   </div>
@@ -245,7 +223,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-blue-600 rounded-2xl transform rotate-6 transition-transform duration-300 group-hover:rotate-3"></div>
                 <Image
-                  src="/forensics.png"
+                  src="/forensics.jpg"
                   alt="Forensic Science"
                   width={600}
                   height={400}
@@ -598,6 +576,13 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
                     <span>+91 8809210525</span>
+                    
+                  </div>
+                  <div className="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>+91 9818194316</span>
                   </div>
                 </div>
 
@@ -620,7 +605,7 @@ export default function Home() {
                       link: "https://t.me/+SxrQOOw1bIc1YjE1"
                     },
                     { 
-                      icon: "M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z",
+                      icon: "M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm10.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z",
                       name: "WhatsApp",
                       link: "https://whatsapp.com/channel/0029VaTfJj49Gv7Tbm9Olb43" 
                     }
