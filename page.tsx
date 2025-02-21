@@ -305,49 +305,43 @@ export default function Home() {
         </section>
 
         <section id="mission" className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black relative group">
-              <span className="inline-block transform transition-transform duration-300 group-hover:scale-105">
-                Mission and Vision
-              </span>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-600 rounded transition-all duration-300 group-hover:w-32"></div>
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="space-y-6 animate-fade-in">
-                    <div className="group">
-                      <h3 className="text-2xl font-semibold mb-4 text-blue-600 flex items-center space-x-2">
-                        <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1">Vision</span>
-                        <div className="w-12 h-0.5 bg-blue-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></div>
-                      </h3>
-                      <p className="text-gray-700 leading-relaxed">
-                        To be a global leader in forensic science, setting the standard for excellence in education, investigation, and innovation. We aspire to bridge the gap between technology and forensic expertise, fostering a future where truth and justice prevail.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-6 animate-fade-in animation-delay-200">
-                    <div className="group">
-                      <h3 className="text-2xl font-semibold mb-4 text-blue-600 flex items-center space-x-2">
-                        <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1">Mission</span>
-                        <div className="w-12 h-0.5 bg-blue-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></div>
-                      </h3>
-                      <p className="text-gray-700 leading-relaxed">
-                        We are committed to delivering accurate, ethical, and science-driven solutions that empower professionals, uphold justice, and enhance the integrity of forensic practices worldwide.
-                      </p>
-                    </div>
-                  </div>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black relative group">
+          <span className="inline-block transform transition-transform duration-300 group-hover:scale-105">
+            Mission and Vision
+          </span>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-600 rounded transition-all duration-300 group-hover:w-32"></div>
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-6 animate-fade-in">
+                <div className="group">
+                  <h3 className="text-2xl font-semibold mb-4 text-blue-600 flex items-center space-x-2">
+                    <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1">Vision</span>
+                    <div className="w-12 h-0.5 bg-blue-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></div>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-justify">
+                    To be a global leader in forensic science, setting the standard for excellence in education, investigation, and innovation. We aspire to bridge the gap between technology and forensic expertise, fostering a future where truth and justice prevail.
+                  </p>
                 </div>
-                {/* <div className="mt-8 text-center">
-                  <div className="inline-flex space-x-2 items-center text-blue-600 font-medium group cursor-pointer">
-                    <span className="transform transition-transform duration-300 group-hover:translate-x-1">Learn More</span>
-                    <ChevronRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
-                </div> */}
+              </div>
+              <div className="space-y-6 animate-fade-in animation-delay-200">
+                <div className="group">
+                  <h3 className="text-2xl font-semibold mb-4 text-blue-600 flex items-center space-x-2">
+                    <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1">Mission</span>
+                    <div className="w-12 h-0.5 bg-blue-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></div>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-justify">
+                    We are committed to delivering accurate, ethical, and science-driven solutions that empower professionals, uphold justice, and enhance the integrity of forensic practices worldwide.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
         <section id="why-choose-us" className="py-16 md:py-24 bg-gray-100">
           <div className="container mx-auto px-4">
