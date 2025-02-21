@@ -179,14 +179,17 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
               {/* Left side - Description */}
               <div className="space-y-6 transform transition-all duration-500 hover:scale-105">
-                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
-                  <div className="absolute top-0 left-0 w-2 h-full bg-blue-600 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6 relative z-10">
-                    Established in 2025, Forensleuth stands at the forefront of forensic science innovation. Our commitment to excellence drives us to continuously evolve and adapt to the changing landscape of forensic investigation and education.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed relative z-10">
-                    We combine cutting-edge technology with decades of expertise to deliver comprehensive solutions in forensic science education, investigation, and research. Our team of seasoned professionals brings unparalleled experience and dedication to every project.
-                  </p>
+      <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 left-0 w-2 h-full bg-blue-600 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+        <div className="text-justify space-y-6">
+          <p className="text-lg text-gray-700 leading-relaxed relative z-10">
+            Established in 2025, Forensleuth stands at the forefront of forensic science innovation. Our commitment to excellence drives us to continuously evolve and adapt to the changing landscape of forensic investigation and education.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed relative z-10">
+            We combine cutting-edge technology with decades of expertise to deliver comprehensive solutions in forensic science education, investigation, and research. Our team of seasoned professionals brings unparalleled experience and dedication to every project.
+          </p>
+          </div>
+
                   <div className="mt-8 flex flex-wrap gap-4">
                     {/* <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-lg"> */}
                       {/* <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
@@ -343,116 +346,116 @@ export default function Home() {
       </div>
     </section>
 
-        <section id="why-choose-us" className="py-16 md:py-24 bg-gray-100">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">Why Choose Us?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                {
-                  title: "Expertise",
-                  description: "Decades of combined experience across diverse forensic disciplines.",
-                },
-                { title: "Innovation", description: "Cutting-edge technology and research-driven practices." },
-                { title: "Integrity", description: "Commitment to ethical standards and confidentiality." },
-                {
-                  title: "Collaboration",
-                  description:
-                    "Strong partnerships with academic institutions, legal entities, and law enforcement agencies.",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
-                >
-                  <h3 className="text-xl font-semibold mb-2 text-blue-600">{item.title}</h3>
-                  <p className="text-gray-700 group-hover:text-black transition-colors duration-300">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    <section id="why-choose-us" className="py-16 md:py-24 bg-gray-100">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">Why Choose Us?</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        {
+          title: "Expertise",
+          description: "Decades of combined experience across diverse forensic disciplines.",
+        },
+        { title: "Innovation", description: "Cutting-edge technology and research-driven practices." },
+        { title: "Integrity", description: "Commitment to ethical standards and confidentiality." },
+        {
+          title: "Collaboration",
+          description:
+            "Strong partnerships with academic institutions, legal entities, and law enforcement agencies.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
+        >
+          <h3 className="text-xl font-semibold mb-2 text-blue-600 text-left">{item.title}</h3>
+          <p className="text-gray-700 group-hover:text-black transition-colors duration-300 text-justify">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         
 
-        <section id="services" className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">Our Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                {
-                  icon: GraduationCap,
-                  title: "Academics",
-                  description: "Empowering the next generation of forensic experts is at the heart of what we do.",
-                  details: [
-                    "Internship programs",
-                    "Webinars",
-                    "Seminars",
-                    "Workshops"
-                  ]
-                },
-                {
-                  icon: Briefcase,
-                  title: "Consultancy",
-                  description: "Expert solutions for complex forensic challenges",
-                  details: [
-                    "⁠Dessertation service",
-                    "⁠Thesis assistant - review and research", 
-                    "⁠Paper writing - review and research",
-                    "⁠Data interpretation",
-                    "⁠Data analysis", 
-                  ]
-                },
-                { 
-                  icon: FileText, 
-                  title: "Publication", 
-                  description: "Advancing knowledge through impactful research",
-                  details: []
-                },
-                { 
-                  icon: Search, 
-                  title: "Investigation", 
-                  description: "Uncovering truth with precision and integrity",
-                  details: []
-                },
-              ].map((service, index) => (
-                <div
-                  key={index}
-                  className="group bg-white p-6 rounded-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 hover:shadow-xl relative overflow-hidden"
-                >
-                  <div className="relative z-10">
-                    <service.icon className={`w-12 h-12 mb-4 transition-all duration-300 group-hover:scale-110 ${service.details.length > 0 ? 'text-blue-600 group-hover:text-white' : 'text-blue-600'}`} />
-                    <h3 className={`text-xl font-semibold mb-2 transition-colors duration-300 ${service.details.length > 0 ? 'group-hover:text-white' : 'group-hover:text-blue-600'} text-black`}>
-                      {service.title}
-                    </h3>
-                    <p className={`transition-colors duration-300 ${service.details.length > 0 ? 'group-hover:text-white' : 'text-gray-700 group-hover:text-black'}`}>
-                      {service.description}
-                    </p>
-                    
-                    {service.details.length > 0 && (
-                      <div className="max-h-0 opacity-0 group-hover:max-h-[200px] group-hover:opacity-100 transition-all duration-300 mt-4">
-                        <ul className="space-y-2 text-white">
-                          {service.details.map((detail, idx) => (
-                            <li key={idx} className="flex items-center space-x-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
-                              <span>{detail}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                  
-                  {/* Background overlay for hover effect */}
-                  {service.details.length > 0 && (
-                    <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-0"></div>
-                  )}
-                </div>
-              ))}
-            </div>
+<section id="services" className="py-16 md:py-24 bg-white">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">Our Services</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        {
+          icon: GraduationCap,
+          title: "Academics",
+          description: "Empowering the next generation of forensic experts is at the heart of what we do.",
+          details: [
+            "Internship programs",
+            "Webinars",
+            "Seminars",
+            "Workshops"
+          ]
+        },
+        {
+          icon: Briefcase,
+          title: "Consultancy",
+          description: "Expert solutions for complex forensic challenges",
+          details: [
+            "⁠Dessertation service",
+            "⁠Thesis assistant - review and research", 
+            "⁠Paper writing - review and research",
+            "⁠Data interpretation",
+            "⁠Data analysis", 
+          ]
+        },
+        { 
+          icon: FileText, 
+          title: "Publication", 
+          description: "Advancing knowledge through impactful research",
+          details: []
+        },
+        { 
+          icon: Search, 
+          title: "Investigation", 
+          description: "Uncovering truth with precision and integrity",
+          details: []
+        },
+      ].map((service, index) => (
+        <div
+          key={index}
+          className="group bg-white p-6 rounded-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 hover:shadow-xl relative overflow-hidden"
+        >
+          <div className="relative z-10">
+            <service.icon className={`w-12 h-12 mb-4 transition-all duration-300 group-hover:scale-110 ${service.details.length > 0 ? 'text-blue-600 group-hover:text-white' : 'text-blue-600'}`} />
+            <h3 className={`text-xl font-semibold mb-2 transition-colors duration-300 ${service.details.length > 0 ? 'group-hover:text-white' : 'group-hover:text-blue-600'} text-black`}>
+              {service.title}
+            </h3>
+            <p className={`text-justify transition-colors duration-300 ${service.details.length > 0 ? 'group-hover:text-white' : 'text-gray-700 group-hover:text-black'}`}>
+              {service.description}
+            </p>
+            
+            {service.details.length > 0 && (
+              <div className="max-h-0 opacity-0 group-hover:max-h-[200px] group-hover:opacity-100 transition-all duration-300 mt-4">
+                <ul className="space-y-2 text-white">
+                  {service.details.map((detail, idx) => (
+                    <li key={idx} className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-        </section>
+          
+          {/* Background overlay for hover effect */}
+          {service.details.length > 0 && (
+            <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg -z-0"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Newsletter Section */}
         <section className="newsletter-section py-16 bg-gradient-to-r from-gray-50 to-gray-100">
